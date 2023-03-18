@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Expensecalc from "./Expense";
+import Display from "./displaypanel";
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      array: [],
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  funcval = (inputamt, date, action) => {
+    console.log(inputamt);
+    this.setState({
+      array: [
+        ...this.state.array,
+        { Date: date, amount: inputamt, event1: action },
+      ],
+    });
+  };
+
+  render() {
+    return (
+      <div className="exptrack">
+        <h1 className="heading">Expense Tracker - Basic</h1>
+        <Expensecalc val={this.funcval} />
+        <Display view={this.state.array} />
+      </div>
+    );
+  }
 }
 
 export default App;
