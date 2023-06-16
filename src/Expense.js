@@ -31,7 +31,7 @@ class Expensecalc extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className=".expence-container">
         <div className="border">
           <h2 className="balance">
             Balance:<span className="amount">{this.state.expenseAmount}</span>

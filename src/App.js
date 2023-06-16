@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Expensecalc from "./Expense";
 import Display from "./displaypanel";
+import "./mediaQuary.css";
 class App extends React.Component {
   constructor(props) {
     super(props);

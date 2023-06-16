@@ -8,7 +8,7 @@ class Display extends React.Component {
   render() {
     var displaysection = this.props.view.map((value) => {
       return (
-        <div>
+        <div className="displayContainer">
           <p className="input-details">
             {value.Date} - {value.amount} - {value.event1}
           </p>

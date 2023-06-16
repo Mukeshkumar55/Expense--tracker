@@ -1,0 +1,43 @@
+@media (max-width: 60rem) {
+  .border {
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    font-size: 100%;
+  }
+  .expence-container {
+    padding: 9.6rem;
+  }
+  .displayContainer {
+    width: 100%;
+    height: 100%;
+
+    font-size: 100%;
+  }
+  .heading {
+    text-align: center;
+    /* font-size: 100%; */
+  }
+  .exptrack {
+    text-align: center;
+    width: 100%;
+    margin: 4.6rem;
+  }
+  .displaysec {
+    width: 100%;
+    height: 100%;
+    padding: 2.6rem !important;
+  }
+  .displayContainer > p {
+    text-align: start;
+  }
+  .displayContainer,
+  .displaysection {
+    /* width: 100% !important; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    text-align: start;
+  }
+}

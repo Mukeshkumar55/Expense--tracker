@@ -31,7 +31,7 @@ button {
   padding: 20px;
   border: 5px solid black;
   height: auto;
-  width: 500px;
+  width: auto;
   margin: auto;
   margin-top: 20px;
 }
@@ -48,5 +48,5 @@ button {
 .transaction,
 .balance,
 .amount {
-  font-size: 30px;
+  font-size: 3rem;
 }
